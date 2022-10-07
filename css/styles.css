@@ -312,11 +312,6 @@ margin-bottom: 9px;
     margin-right: 8px;
 }
 
-.projects .examples {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .projects-filters .btn {
     padding: 6px 22px;
     border-radius: 4px;
@@ -339,25 +334,24 @@ margin-bottom: 9px;
     color: var(--primary-bgd-color);
 }
 
-/* при зміні позиціонування прибрати все нижче */
-.examples > .poster {
-    width: calc((100%-60px)/3);
-}
-
-.examples > .poster:not(:nth-last-child(-n+3)) {
-    margin-bottom: 30px;
-}
-/* при зміні позиціонування прибрати все вище */
-
 .photo {
     display: block;
 }
 
-.examples .content {
+.projects .examples {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
 
-    /* при зміні позиціонування прибрати width*/
+.examples > .poster {
+   /* flex-basis: calc(100%/3-30px); */
+    margin-left: 30px;
+    margin-top: 30px;
+}
 
-    width: 370px;
+.poster > .content {
     padding: 20px 24px;
     border-right: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
@@ -381,4 +375,5 @@ margin-bottom: 9px;
 .examples-title > .upper {
     text-transform: uppercase;
 }
+
 
